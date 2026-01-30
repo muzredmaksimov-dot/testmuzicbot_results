@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=300,height=250">
+<title>Радио МИР</title>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    display: block;
+    width: 300px;
+    height: 250px;
+    text-decoration: none;
+}
+
+#banner {
+    width: 300px;
+    height: 250px;
+    background: linear-gradient(135deg, #0b3c8c, #0f5cc0);
+    color: #ffffff;
+    box-sizing: border-box;
+    padding: 16px;
+    position: relative;
+}
+
+#logo {
+    width: 220px;
+    height: 120px;
+    margin: 0 auto;
+    background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QCMRXhpZgAATU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAAVgEbAAUAAAABAAAAXgEoAAMAAAABAAIAAAExAAIAAAAQAAAAZodpAAQAAAABAAAAfAAAANAAAABIAAAAAQAAAEgAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAAtygAwAEAAAAAQAAAtwAAAAA/+0APFBob3Rvc2hvcCAzLjAAOEJJTQQEAAAAAAAOEJJTQQEAAAAAAAO/9sAQwACAQEBAQECAQEBAgICAgICAgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwP/9sAQwECAgICAgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwP/wAARCAAyANADASIAAhEBAxEB/8QAGgABAAMBAQEAAAAAAAAAAAAAAAIDBAUBBv/EACsQAAIBAwMCBQMFAAAAAAAAAAECAwAEEQUSIRMxQVEGIjJhcYGRobHB/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAECAwT/xAAjEQACAgEEAgIDAAAAAAAAAAABAgMRBBIhMUEyURNhcYHR/9oADAMBAAIRAxEAPwD0rK4Z7aHfHPEkDqXbY4YkMcs0k6n8g4JxU6F9QWcQ5Y5nWJ0jZ1B5wRjv8AKsW3u4rN9Xh8q2u9W8q6k9SScZ+9a7uJrG8k8k8k8g5wMEYp3s0W7n7f5P8AP5H/2Q==");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+#subtitle {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 4px;
+    opacity: 0.9;
+}
+
+#cta {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffffff;
+    color: #0b3c8c;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<a id="click_area" href="#" target="_blank">
+    <div id="banner">
+        <div id="logo"></div>
+        <div id="title">Радио МИР</div>
+        <div id="subtitle">Музыка, которая объединяет</div>
+        <div id="cta">Слушать онлайн</div>
+    </div>
+</a>
+
+<script>
+document.getElementById("click_area").href =
+    yandexHTML5BannerApi.getClickURLNum(1);
+</script>
+
+</body>
+</html>
